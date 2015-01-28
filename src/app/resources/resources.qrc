@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>splash.png</file>
+        <file>icon.png</file>
+        <file>menu/debug.png</file>
+        <file>menu/edit.png</file>
+        <file>menu/execute.png</file>
+        <file>menu/file.png</file>
+        <file>menu/help.png</file>
+        <file>menu/search.png</file>
+        <file>menu/tools.png</file>
+        <file>menu/view.png</file>
+        <file>mainmenu.png</file>
+        <file>menu/tabs.png</file>
+        <file>actions/EditCopy.png</file>
+        <file>actions/EditCut.png</file>
+        <file>actions/EditPaste.png</file>
+        <file>actions/EditRedo.png</file>
+        <file>actions/EditSelectAll.png</file>
+        <file>actions/EditUndo.png</file>
+        <file>actions/FileClose.png</file>
+        <file>actions/FileExit.png</file>
+        <file>actions/FileNew.png</file>
+        <file>actions/FileOpen.png</file>
+        <file>actions/FileSave.png</file>
+        <file>actions/FileSaveAll.png</file>
+        <file>actions/FileSaveAs.png</file>
+        <file>indicator.png</file>
+    </qresource>
+</RCC>
