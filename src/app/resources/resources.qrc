@@ -26,5 +26,8 @@
         <file>actions/FileSaveAll.png</file>
         <file>actions/FileSaveAs.png</file>
         <file>indicator.png</file>
+        <file>tab/TabCloseDown.png</file>
+        <file>tab/TabCloseHover.png</file>
+        <file>tab/TabCloseNormal.png</file>
     </qresource>
 </RCC>

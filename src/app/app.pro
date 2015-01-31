@@ -25,7 +25,8 @@ SOURCES += \
     sdk/kctexteditorlinenumberpanel.cpp \
     sdk/kcthemeconfigure.cpp \
     sdk/kcconfigure.cpp \
-    sdk/kcconfigurebackend.cpp
+    sdk/kcconfigurebackend.cpp \
+    sdk/kctabstyle.cpp
 
 HEADERS += \
     kcloader.h \
@@ -46,7 +47,8 @@ HEADERS += \
     sdk/kctexteditorlinenumberpanel.h \
     sdk/kcthemeconfigure.h \
     sdk/kcconfigure.h \
-    sdk/kcconfigurebackend.h
+    sdk/kcconfigurebackend.h \
+    sdk/kctabstyle.h
 
 RESOURCES += \
     resources/resources.qrc

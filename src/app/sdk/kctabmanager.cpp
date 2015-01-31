@@ -20,12 +20,20 @@
 #include <QTabBar>
 
 #include "kccodeeditor.h"
+#include "kctabstyle.h"
 
 #include "kctabmanager.h"
+
+KCTabStyle *KCTabManager::m_tabStyle=nullptr;
 
 KCTabManager::KCTabManager(QWidget *parent) :
     QTabWidget(parent)
 {
+    if(m_tabStyle==nullptr)
+    {
+        m_tabStyle=new KCTabStyle;
+    }
+    setStyle(m_tabStyle);
     //Set properties.
     setAcceptDrops(true);
     setContentsMargins(0,0,0,0);

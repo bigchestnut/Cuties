@@ -49,6 +49,7 @@ enum TabManagerActions
 using namespace KCTabManagerNamespace;
 
 class KCCodeEditor;
+class KCTabStyle;
 class KCTabManager : public QTabWidget
 {
     Q_OBJECT
@@ -69,6 +70,7 @@ private:
     void initialActions();
     int addCodeEditor(KCCodeEditor *editor);
     QTabBar *m_tabBar;
+    static KCTabStyle *m_tabStyle;
     int m_newFileCount=0;
     QString m_untitledText;
     QAction *m_tabManagerAction[TabManagerActionsCount];
