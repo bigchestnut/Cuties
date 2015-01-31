@@ -50,7 +50,7 @@ void KCThemeConfigure::loadConfigure()
         ++i)
     {
         //Insert the palette to hash list.
-        QJsonObject currentObject=mapObject.value(*i);
+        QJsonObject currentObject=mapObject.value(*i).toObject();
         //Build the palette.
         //Check if the palette is based on a parent palette.
         QPalette currentPalette=
@@ -128,7 +128,7 @@ KCThemeConfigure::KCThemeConfigure(QObject *parent) :
     m_textRole.insert("AlternateBase",QPalette::AlternateBase);
     m_textRole.insert("ToolTipBase",QPalette::ToolTipBase);
     m_textRole.insert("ToolTipText",QPalette::ToolTipText);
-    m_textRole.insert("Texts",QPalette::Texts);
+    m_textRole.insert("Text",QPalette::Text);
     m_textRole.insert("Button",QPalette::Button);
     m_textRole.insert("ButtonText",QPalette::ButtonText);
     m_textRole.insert("BrightText",QPalette::BrightText);
@@ -148,7 +148,7 @@ KCThemeConfigure::KCThemeConfigure(QObject *parent) :
     m_roleText.insert(QPalette::AlternateBase,"AlternateBase");
     m_roleText.insert(QPalette::ToolTipBase,"ToolTipBase");
     m_roleText.insert(QPalette::ToolTipText,"ToolTipText");
-    m_roleText.insert(QPalette::Texts,"Texts");
+    m_roleText.insert(QPalette::Text,"Text");
     m_roleText.insert(QPalette::Button,"Button");
     m_roleText.insert(QPalette::ButtonText,"ButtonText");
     m_roleText.insert(QPalette::BrightText,"BrightText");
