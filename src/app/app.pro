@@ -22,7 +22,10 @@ SOURCES += \
     sdk/kctextblockdata.cpp \
     sdk/kctexteditorpanelbar.cpp \
     sdk/kctexteditorpanel.cpp \
-    sdk/kctexteditorlinenumberpanel.cpp
+    sdk/kctexteditorlinenumberpanel.cpp \
+    sdk/kcthemeconfigure.cpp \
+    sdk/kcconfigure.cpp \
+    sdk/kcconfigurebackend.cpp
 
 HEADERS += \
     kcloader.h \
@@ -40,7 +43,10 @@ HEADERS += \
     sdk/kctextblockdata.h \
     sdk/kctexteditorpanelbar.h \
     sdk/kctexteditorpanel.h \
-    sdk/kctexteditorlinenumberpanel.h
+    sdk/kctexteditorlinenumberpanel.h \
+    sdk/kcthemeconfigure.h \
+    sdk/kcconfigure.h \
+    sdk/kcconfigurebackend.h
 
 RESOURCES += \
     resources/resources.qrc

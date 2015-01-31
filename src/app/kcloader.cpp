@@ -26,7 +26,9 @@
 #include "kctabmanager.h"
 
 #include "kcmainwindow.h"
+
 #include "knversion.h"
+#include "kcglobal.h"
 
 #include "kcloader.h"
 
@@ -58,11 +60,12 @@ void KCLoader::hideSplash()
 KCLoader::KCLoader(QObject *parent) :
     QObject(parent)
 {
-    initalApplicationInformation();
+    initialApplicationInformation();
+    initialConfigure();
     initialSplashScreen();
 }
 
-void KCLoader::initalApplicationInformation()
+void KCLoader::initialApplicationInformation()
 {
     //Set application details.
     QApplication::setApplicationName("Cuties");
@@ -83,6 +86,12 @@ void KCLoader::initalApplicationInformation()
 
     //Set global styles.
     QApplication::setStyle(QStyleFactory::create("fusion"));
+}
+
+void KCLoader::initialConfigure()
+{
+    //Initial the global instance.
+    m_global=KCGlobal::instace();
 }
 
 void KCLoader::addMainMenuAction(const QList<MenuActions> &actionList)

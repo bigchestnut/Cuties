@@ -48,7 +48,7 @@ void KNSAOMainMenu::showEvent(QShowEvent *e)
     m_showAnime->setStartValue(QRect(geometry().x(),
                                      geometry().y(),
                                      geometry().width(),
-                                     0));
+                                     1));
     m_showAnime->setEndValue(geometry());
     //Start animation.
     m_showAnime->start();

@@ -29,12 +29,14 @@ struct MenuActions
 
 using namespace KCGlobalNameSpace;
 
+class KCThemeConfigure;
 class KCGlobal : public QObject
 {
     Q_OBJECT
 public:
     static KCGlobal *instace();
     ~KCGlobal();
+    QPalette getPalette(const QString &identityName);
 
 signals:
 
@@ -42,8 +44,8 @@ public slots:
 
 private:
     static KCGlobal *m_instance;
+    static KCThemeConfigure *m_themeInstance;
     explicit KCGlobal(QObject *parent = 0);
-
 };
 
 #endif // KCGLOBAL_H

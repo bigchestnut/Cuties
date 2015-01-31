@@ -26,9 +26,11 @@
 class QSplashScreen;
 class QTimer;
 class KCMainMenu;
+class KCGlobal;
 class KCTabManager;
 class KCMainWindow;
 class KCUniTitlebar;
+class KCThemeConfigure;
 class KCLoader : public QObject
 {
     Q_OBJECT
@@ -55,9 +57,12 @@ public slots:
 private:
     static KCLoader *m_instance;
     explicit KCLoader(QObject *parent = 0);
-    inline void initalApplicationInformation();
+    inline void initialApplicationInformation();
+    inline void initialConfigure();
 
     void addMainMenuAction(const QList<MenuActions> &actionList);
+
+    KCGlobal *m_global;
 
     //Splash screen.
     inline void initialSplashScreen();

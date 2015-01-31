@@ -1,3 +1,3 @@
 TEMPLATE = subdirs
 SUBDIRS += app\
-           tools/runner
+           tools/Runner
